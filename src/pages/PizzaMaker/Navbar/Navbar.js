@@ -23,7 +23,7 @@ export const Navbar = (props) => {
         const data = props.currentUser
         setUser(data)
         setIsLogin(props.isLogin)
-    })
+    }, [props.currentUser, props.isLogin])
 
     return (
 
@@ -40,7 +40,7 @@ export const Navbar = (props) => {
                         <p className={'nav__username'}>{isLogin ? props.currentUser.email : ''}</p>
                     </div>
                     <div className={isLogin ? 'nav__avatar' : 'nav__avatar avatar-guest'}>
-                        <img className={isLogin ? 'nav__img' : 'hidden'} src={isLogin ? user.picture : ''} />
+                        <img className={isLogin ? 'nav__img' : 'hidden'} src={isLogin ? user.picture : ''} alt={'avatar'} />
                     </div>
                     <NavbarBtn updateApp={update}
                         btnState={props.btnState}
