@@ -6,6 +6,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { Homepage } from '../pages/Homepage/Homepage';
+import { Homework3 } from '../pages/H3/Homework3';
+import { Homework4 } from '../pages/H4/Homework4';
 import { Homework5 } from '../pages/H5/Homework5';
 import { Homework6 } from '../pages/H6/Homework6';
 import { Homework7 } from '../pages/H7/Homework7';
@@ -17,7 +20,19 @@ export default function App() {
     <Router>
       <div>
         <nav>
-          <ul className={'nav__list'}>.
+          <ul className={'nav__list'}>
+
+            <li className={'nav__item'}>
+              <Link to="/">Home</Link>
+            </li>
+
+            <li className={'nav__item'}>
+              <Link to="/homework-3">Homework 3</Link>
+            </li>
+
+            <li className={'nav__item'}>
+              <Link to="/homework-4">Homework 4</Link>
+            </li>
 
             <li className={'nav__item'}>
               <Link to="/homework-5">Homework 5</Link>
@@ -45,6 +60,9 @@ export default function App() {
 
         <main className={'app'}>
           <Switch>
+
+
+
             <Route path="/pizza">
               <PizzaApp />
             </Route>
@@ -63,6 +81,18 @@ export default function App() {
 
             <Route path="/homework-5">
               <Homework5 />
+            </Route>
+
+            <Route path="/homework-4">
+              <Homework4 />
+            </Route>
+
+            <Route path="/homework-3">
+              <Homework3 />
+            </Route>
+
+            <Route path="/">
+              <Homepage />
             </Route>
 
 
