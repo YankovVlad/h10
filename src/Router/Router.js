@@ -13,7 +13,8 @@ import { Homework5 } from '../pages/H5/Homework5';
 import { Homework6 } from '../pages/H6/Homework6';
 import { Homework7 } from '../pages/H7/Homework7';
 import { Homework9 } from '../pages/H9/Homework-9';
-import { Homework11 } from '../pages/H11/Homework11'
+import { Homework11 } from '../pages/H11/Homework11';
+import { Homework12 } from '../pages/H12/Homework12';
 import { PizzaApp } from '../pages/PizzaMaker/App/PizzaApp';
 
 export default function App() {
@@ -59,12 +60,20 @@ export default function App() {
               <Link className={'nav__link'} to="/homework-11">Homework 11</Link>
             </li>
 
+            <li className={'nav__item'}>
+              <Link className={'nav__link'} to="/homework-12">Homework 12</Link>
+            </li>
+
           </ul>
         </nav>
 
 
         <main className={'app'}>
           <Switch>
+
+            <Route path="/homework-12">
+              <Homework12 />
+            </Route>
 
             <Route path="/homework-11/:figure">
               <Homework11 />

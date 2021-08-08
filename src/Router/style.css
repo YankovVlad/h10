@@ -5,20 +5,7 @@
 
     width: 100%;
 }
-.wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  
-    padding: 15px;
-    border: 1px solid grey;
-    border-radius: 5px;    
-}
+
 .wrap-inner {
     width: 100%;
 }

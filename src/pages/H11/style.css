@@ -1,3 +1,4 @@
+
 .figure {
     display: grid;
     place-items: center;
@@ -7,6 +8,7 @@
     border: 5px solid black;
 
     transition: all 0.5s ease;
+    
     
 }
 .circle {
